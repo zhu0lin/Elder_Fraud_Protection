@@ -1,10 +1,12 @@
 module.exports = {
   testEnvironment: 'jsdom',
   testMatch: ['**/tests/**/*.test.js'],
+  testPathIgnorePatterns: ['tests/e2e.test.js'],
   collectCoverageFrom: [
-    '**/*.js',
+    '*.js',
+    'popup/*.js',
     '!jest.config.js',
-    '!node_modules/**',
-    '!coverage/**'
-  ]
+    '!node_modules/**'
+  ],
+    setupFiles: ['./tests/mocks/chrome.js']
 };

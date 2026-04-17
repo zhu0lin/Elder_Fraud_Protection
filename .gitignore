@@ -2,6 +2,5 @@ node_modules/
 coverage/
 .DS_Store
 *.log
-.playwright-user-data/
-playwright-report/
-test-results/
+backend/.env
+backend/__pycache__/
